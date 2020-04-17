@@ -1,42 +1,46 @@
 //
-//  YBViewController.m
-//  YBScrollTextView
+//  YBScrollTextViewDelegateVC.m
+//  YBScrollTextView_Example
 //
-//  Created by yangyibo93@gmail.com on 04/16/2020.
-//  Copyright (c) 2020 yangyibo93@gmail.com. All rights reserved.
+//  Created by yyb on 2020/4/17.
+//  Copyright © 2020 yangyibo93@gmail.com. All rights reserved.
 //
 
-#import "YBViewController.h"
+#import "YBScrollTextViewDelegateVC.h"
 #import <YBScrollTextView.h>
+#import "CustomCell.h"
 
-@interface YBViewController ()<YBScrollTextViewDelegate>
+@interface YBScrollTextViewDelegateVC ()<YBScrollTextViewDelegate>
 
 @end
 
-@implementation YBViewController
+@implementation YBScrollTextViewDelegateVC
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	
+    
     self.view.backgroundColor = UIColor.whiteColor;
     
     NSMutableArray *dataSource = [NSMutableArray array];
     
-    YBScrollTextModel *model1 = [YBScrollTextModel new];
+    CustomModel *model1 = [CustomModel new];
     model1.text = @"滚动文字滚动文字滚动文字滚动文字1";
+    model1.image = [UIImage imageNamed:@"icon"];
     [dataSource addObject:model1];
     
-    YBScrollTextModel *model2 = [YBScrollTextModel new];
+    CustomModel *model2 = [CustomModel new];
     model2.text = @"滚动文字2";
+    model2.image = [UIImage imageNamed:@"icon"];
     [dataSource addObject:model2];
     
-    YBScrollTextModel *model3 = [YBScrollTextModel new];
+    CustomModel *model3 = [CustomModel new];
     model3.text = @"滚动文字滚动文字3";
+    model3.image = [UIImage imageNamed:@"icon"];
     [dataSource addObject:model3];
-
-    YBScrollTextModel *model4 = [YBScrollTextModel new];
+    
+    CustomModel *model4 = [CustomModel new];
     model4.text = @"滚动文字滚动文字滚动文字滚动文字滚动文字滚动文字滚动文字4";
+    model4.image = [UIImage imageNamed:@"icon"];
     [dataSource addObject:model4];
     
     YBScrollTextView *aView1 = [YBScrollTextView new];
@@ -47,9 +51,8 @@
     aView1.edgeInsets = UIEdgeInsetsMake(0, 15, 0, 15);
     aView1.layer.cornerRadius = 5;
     aView1.tag = 10001;
-    [aView1 setClickedItemCallBack:^(YBScrollTextView * _Nonnull scrollTextView, __kindof YBScrollTextModel * _Nonnull model) {
-        NSLog(@"%@", model.text);
-    }];
+    aView1.delegate = self;
+    [aView1 registerClass:[CustomCell class] reuseIdentifier:@"cell"];
     [aView1 starScrollText];
     [self.view addSubview:aView1];
     
@@ -61,9 +64,8 @@
     aView2.edgeInsets = UIEdgeInsetsMake(0, 15, 0, 15);
     aView2.layer.cornerRadius = 5;
     aView2.tag = 10002;
-    [aView2 setClickedItemCallBack:^(YBScrollTextView * _Nonnull scrollTextView, __kindof YBScrollTextModel * _Nonnull model) {
-        NSLog(@"%@", model.text);
-    }];
+    aView2.delegate = self;
+    [aView2 registerClass:[CustomCell class] reuseIdentifier:@"cell"];
     [aView2 starScrollText];
     [self.view addSubview:aView2];
     
@@ -75,11 +77,9 @@
     aView3.edgeInsets = UIEdgeInsetsMake(0, 15, 0, 15);
     aView3.layer.cornerRadius = 5;
     aView3.tag = 10003;
-    [aView3 setClickedItemCallBack:^(YBScrollTextView * _Nonnull scrollTextView, __kindof YBScrollTextModel * _Nonnull model) {
-        NSLog(@"%@", model.text);
-    }];
+    aView3.delegate = self;
+    [aView3 registerClass:[CustomCell class] reuseIdentifier:@"cell"];
     [aView3 starScrollText];
-    aView3.margin = 20;
     [self.view addSubview:aView3];
     
     YBScrollTextView *aView4 = [YBScrollTextView new];
@@ -90,17 +90,31 @@
     aView4.edgeInsets = UIEdgeInsetsMake(0, 15, 0, 15);
     aView4.layer.cornerRadius = 5;
     aView4.tag = 10004;
-    [aView4 setClickedItemCallBack:^(YBScrollTextView * _Nonnull scrollTextView, __kindof YBScrollTextModel * _Nonnull model) {
-        NSLog(@"%@", model.text);
-    }];
-    aView4.margin = 20;
+    aView4.delegate = self;
+    [aView4 registerClass:[CustomCell class] reuseIdentifier:@"cell"];
     [aView4 starScrollText];
     [self.view addSubview:aView4];
+    
     
     UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake(15, CGRectGetMaxY(aView4.frame) + 50, self.view.bounds.size.width - 30, 20)];
     [slider addTarget:self action:@selector(onSlider:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:slider];
 }
+
+- (UICollectionViewCell *)scrollTextView:(YBScrollTextView *)scrollTextView itemWithModel:(__kindof YBScrollTextModel *)model index:(NSInteger)index {
+    CustomCell *cell = [scrollTextView dequeueReusableItemWithReuseIdentifier:@"cell" forIndex:index];
+    cell.model = (CustomModel *)model;
+    [cell setClickedCallBack:^{
+        NSLog(@"当前点击的文字: %@", model.text);
+    }];
+    return cell;
+}
+
+- (CGFloat)scrollTextView:(YBScrollTextView *)scrollTextView itemWithModel:(__kindof YBScrollTextModel *)model widthForItemAtIndex:(NSInteger)index {
+    return model.text_w + 42;
+}
+
+
 
 - (void)onSlider:(UISlider *)slider {
     CGFloat speed = slider.value / 100.0;
@@ -113,16 +127,5 @@
     aView3.speed_h = aView4.speed_h = aView5.speed_h = speed;
 }
 
-
-
-
-
-
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end

@@ -1,0 +1,16 @@
+PODS:
+  - YBScrollTextView (0.1.0)
+
+DEPENDENCIES:
+  - YBScrollTextView (from `../`)
+
+EXTERNAL SOURCES:
+  YBScrollTextView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YBScrollTextView: b4210356d49437d250e281646f98394973ad6f6c
+
+PODFILE CHECKSUM: 9703b7c30b27125ef494bd894bea099ac48b0bda
+
+COCOAPODS: 1.7.3

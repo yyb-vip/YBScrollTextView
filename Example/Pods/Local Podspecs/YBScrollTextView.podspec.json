@@ -1,0 +1,22 @@
+{
+  "name": "YBScrollTextView",
+  "version": "0.1.0",
+  "summary": "A short description of YBScrollTextView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/yangyibo93@gmail.com/YBScrollTextView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yangyibo93@gmail.com": "yangyibo93@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/yangyibo93@gmail.com/YBScrollTextView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "YBScrollTextView/Classes/**/*"
+}

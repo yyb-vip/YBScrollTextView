@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182A55AA2449583C00DF26DE /* MainTabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A55A92449583C00DF26DE /* MainTabbarVC.m */; };
+		182A55AD244958DA00DF26DE /* YBScrollTextViewDelegateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A55AC244958DA00DF26DE /* YBScrollTextViewDelegateVC.m */; };
+		182A55B024495CD800DF26DE /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182A55AF24495CD800DF26DE /* CustomCell.m */; };
+		182A55B62449958800DF26DE /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 182A55B52449958800DF26DE /* demo.gif */; };
 		28906FCB637AF8220C28EA7B /* Pods_YBScrollTextView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F991C955434DE136D6BE799 /* Pods_YBScrollTextView_Example.framework */; };
 		32410B160196F0DFE9B1DEAF /* Pods_YBScrollTextView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E391EAFDDEE977037D47369C /* Pods_YBScrollTextView_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -23,7 +27,6 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AFA854D2255BF1D68234B72 /* YBScrollTextView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YBScrollTextView.podspec; path = ../YBScrollTextView.podspec; sourceTree = "<group>"; };
+		0AFA854D2255BF1D68234B72 /* YBScrollTextView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YBScrollTextView.podspec; path = ../YBScrollTextView.podspec; sourceTree = "<group>"; };
 		0BB8554516432023D285C921 /* Pods-YBScrollTextView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBScrollTextView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YBScrollTextView_Tests/Pods-YBScrollTextView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		0EF728E2E3365C419938CEF1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0EF728E2E3365C419938CEF1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		182A55A82449583C00DF26DE /* MainTabbarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabbarVC.h; sourceTree = "<group>"; };
+		182A55A92449583C00DF26DE /* MainTabbarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabbarVC.m; sourceTree = "<group>"; };
+		182A55AB244958DA00DF26DE /* YBScrollTextViewDelegateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBScrollTextViewDelegateVC.h; sourceTree = "<group>"; };
+		182A55AC244958DA00DF26DE /* YBScrollTextViewDelegateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBScrollTextViewDelegateVC.m; sourceTree = "<group>"; };
+		182A55AE24495CD800DF26DE /* CustomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		182A55AF24495CD800DF26DE /* CustomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		182A55B52449958800DF26DE /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
 		2F991C955434DE136D6BE799 /* Pods_YBScrollTextView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YBScrollTextView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		577B0947186886B57F004303 /* Pods-YBScrollTextView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBScrollTextView_Example.debug.xcconfig"; path = "Target Support Files/Pods-YBScrollTextView_Example/Pods-YBScrollTextView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5AACAB99701FADBC30F9BE8B /* Pods-YBScrollTextView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBScrollTextView_Tests.release.xcconfig"; path = "Target Support Files/Pods-YBScrollTextView_Tests/Pods-YBScrollTextView_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,9 +73,8 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		886338AA8B48818758FEA486 /* Pods-YBScrollTextView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBScrollTextView_Example.release.xcconfig"; path = "Target Support Files/Pods-YBScrollTextView_Example/Pods-YBScrollTextView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A31D83B4069A4BD489877F68 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A31D83B4069A4BD489877F68 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E391EAFDDEE977037D47369C /* Pods_YBScrollTextView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YBScrollTextView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -134,10 +143,16 @@
 			children = (
 				6003F59C195388D20070C39A /* YBAppDelegate.h */,
 				6003F59D195388D20070C39A /* YBAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				182A55A82449583C00DF26DE /* MainTabbarVC.h */,
+				182A55A92449583C00DF26DE /* MainTabbarVC.m */,
 				6003F5A5195388D20070C39A /* YBViewController.h */,
 				6003F5A6195388D20070C39A /* YBViewController.m */,
+				182A55AB244958DA00DF26DE /* YBScrollTextViewDelegateVC.h */,
+				182A55AC244958DA00DF26DE /* YBScrollTextViewDelegateVC.m */,
+				182A55AE24495CD800DF26DE /* CustomCell.h */,
+				182A55AF24495CD800DF26DE /* CustomCell.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				182A55B52449958800DF26DE /* demo.gif */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -193,7 +208,6 @@
 				0BB8554516432023D285C921 /* Pods-YBScrollTextView_Tests.debug.xcconfig */,
 				5AACAB99701FADBC30F9BE8B /* Pods-YBScrollTextView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +222,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				194C595C7435ADDC27411784 /* [CP] Embed Pods Frameworks */,
+				36DA964E6B5BAB1F53D6BF1E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +272,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -277,8 +292,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				182A55B62449958800DF26DE /* demo.gif in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -295,24 +310,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		194C595C7435ADDC27411784 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YBScrollTextView_Example/Pods-YBScrollTextView_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/YBScrollTextView/YBScrollTextView.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YBScrollTextView.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YBScrollTextView_Example/Pods-YBScrollTextView_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		20682D75825980381297A7C0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,6 +330,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36DA964E6B5BAB1F53D6BF1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YBScrollTextView_Example/Pods-YBScrollTextView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YBScrollTextView/YBScrollTextView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YBScrollTextView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YBScrollTextView_Example/Pods-YBScrollTextView_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A7C426C426CC7AF74A8BF1A6 /* [CP] Check Pods Manifest.lock */ = {
@@ -367,6 +382,9 @@
 				6003F59E195388D20070C39A /* YBAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* YBViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				182A55AD244958DA00DF26DE /* YBScrollTextViewDelegateVC.m in Sources */,
+				182A55B024495CD800DF26DE /* CustomCell.m in Sources */,
+				182A55AA2449583C00DF26DE /* MainTabbarVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

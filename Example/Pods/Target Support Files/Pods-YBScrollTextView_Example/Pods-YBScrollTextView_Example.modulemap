@@ -1,0 +1,6 @@
+framework module Pods_YBScrollTextView_Example {
+  umbrella header "Pods-YBScrollTextView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

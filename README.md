@@ -22,7 +22,7 @@ pod 'YBScrollTextView'
 
 ## Author
 
-yangyibo93@gmail.com, yangyibo93@gmail.com
+yyb, yangyibo93@gmail.com
 
 ## License
 
