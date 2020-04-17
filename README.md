@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/YBScrollTextView.svg?style=flat)](https://cocoapods.org/pods/YBScrollTextView)
 [![Platform](https://img.shields.io/cocoapods/p/YBScrollTextView.svg?style=flat)](https://cocoapods.org/pods/YBScrollTextView)
 
+![](https://github.com/YangYiBo23/YBScrollTextView/blob/master/Example/YBScrollTextView/demo.gif)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
